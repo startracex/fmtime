@@ -2,16 +2,15 @@
 
 Format time.
 
-Z: Time Zone
-Y: Year
-M: Month
-D: Day
-h: Hour
-m: Minute
-s: Second
-S: Milli Second
+Z: Time Zone\
+Y: Year\
+M: Month\
+D: Day\
+h: Hour\
+m: Minute\
+s: Second\
+S: Milli Second\
 %: Default escape
-
 ```js
 import fmtime from "fmtime";
 fmtime("YYYY-MM-DD hh:mm:ss UTC Z"); // 2024-02-25 05:39:06 UTC +8
