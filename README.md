@@ -9,10 +9,12 @@ D: Day\
 h: Hour\
 m: Minute\
 s: Second\
-S: Milli Second\
+S: Milli second\
 %: Default escape
+
 ```js
 import fmtime from "fmtime";
+
 fmtime("YYYY-MM-DD hh:mm:ss UTC Z"); // 2024-02-25 05:39:06 UTC +8
 fmtime("hh:mm:ss DD/MM/YYYY"); // 05:39:06 25/02/2024
 
@@ -27,5 +29,5 @@ The third parameter requires that **other characters are not matched** in the **
 
 ```js
 fmtime("YYYY AAYear", undefined, "AA"); // ✅
-fmtime("YYYY x$Year", undefined, "x$"); // ❎
+fmtime("YYYY A$Year", undefined, "A$"); // ❎
 ```
