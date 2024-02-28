@@ -7,13 +7,16 @@ export function format(
   time = new Date(),
   escape = "%"
 ): string | undefined {
+  if (!fmt) {
+    return fmt;
+  }
   if (isNaN(time.getTime())) {
     return undefined;
   }
   const replaced = `${escape}${escape}`;
   const rest: string[] = [];
   fmt = fmt.replace(
-    new RegExp(`${escape}([ZYMDhms${escape}])`, "g"),
+    new RegExp(`${escape}([ZYMDhmsS${escape}])`, "g"),
     (_, p1) => {
       rest.push(p1);
       return replaced;
