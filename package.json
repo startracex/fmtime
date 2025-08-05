@@ -16,5 +16,9 @@
     "timezone"
   ],
   "author": "startracex",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@startracex/dev-config": "^0.4.2",
+    "typescript": "^5.9.2"
+  }
 }

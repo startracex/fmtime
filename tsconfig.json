@@ -1,7 +1,9 @@
 {
+  "extends": "@startracex/dev-config/tsconfig/lib",
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["ES2017"],
-    "declaration": true
-  }
+    "rootDir": "src",
+    "outDir": "build"
+  },
+  "include": ["src"]
 }
