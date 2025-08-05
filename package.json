@@ -3,22 +3,35 @@
   "version": "0.0.3",
   "description": "Format time",
   "type": "module",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "tsc"
+  },
+  "devDependencies": {
+    "@startracex/dev-config": "^0.4.2",
+    "typescript": "^5.9.2"
+  },
+  "exports": {
+    ".": "./build/index.js",
+    "./*.js": "./build/*.js",
+    "./*": "./*"
+  },
+  "files": [
+    "build",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startracex/fmtime.git"
   },
   "keywords": [
     "date",
     "datetime",
     "format",
     "formatter",
-    "time",
-    "timezone"
+    "time"
   ],
   "author": "startracex",
   "license": "MIT",
-  "devDependencies": {
-    "@startracex/dev-config": "^0.4.2",
-    "typescript": "^5.9.2"
-  }
+  "packageManager": "pnpm@10.14.0"
 }
